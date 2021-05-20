@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Pi Pico Test Board"
 Date "2021-05-20"
 Rev "1"
@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 7600 1950 1000 1000
+S 7700 2450 600  600 
 U 60A68B69
 F0 "PWM to 10V Output" 50
 F1 "10V_OUT.sch" 50
-F2 "PWM" I L 7600 2450 50 
-F3 "OUT" I R 8600 2450 50 
+F2 "PWM" I L 7700 2750 50 
+F3 "OUT" I R 8300 2750 50 
 $EndSheet
 $Comp
 L power:GNDREF #PWR0101
@@ -84,14 +84,53 @@ Connection ~ 1450 3600
 Wire Wire Line
 	1450 3600 1450 3550
 $Comp
-L MCU_RaspberryPi_and_Boards:RP2040 U?
-U 1 1 60A88326
-P 5500 3900
-F 0 "U?" H 5500 1811 50  0000 C CNN
-F 1 "RP2040" H 5500 1720 50  0000 C CNN
-F 2 "RP2040_minimal:RP2040-QFN-56" H 4750 3900 50  0001 C CNN
-F 3 "" H 4750 3900 50  0001 C CNN
-	1    5500 3900
+L MCU_RaspberryPi_and_Boards:Pico U2
+U 1 1 60A8B6FD
+P 5750 3500
+F 0 "U2" H 5750 4715 50  0000 C CNN
+F 1 "Pico" H 5750 4624 50  0000 C CNN
+F 2 "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH" V 5750 3500 50  0001 C CNN
+F 3 "" H 5750 3500 50  0001 C CNN
+	1    5750 3500
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 7700 3300 600  600 
+U 60A8EFC5
+F0 "10V to 3.3V Input" 50
+F1 "10V_IN.sch" 50
+F2 "OUT" I R 8300 3600 50 
+F3 "IN" I L 7700 3600 50 
+$EndSheet
+$Comp
+L power:+5V #PWR?
+U 1 1 60A9FB68
+P 2200 3000
+F 0 "#PWR?" H 2200 2850 50  0001 C CNN
+F 1 "+5V" H 2215 3173 50  0000 C CNN
+F 2 "" H 2200 3000 50  0001 C CNN
+F 3 "" H 2200 3000 50  0001 C CNN
+	1    2200 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 3100 3    50   Input ~ 0
+5V
+Wire Wire Line
+	2200 3000 2200 3050
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60AA0BC3
+P 2300 3050
+F 0 "#FLG?" H 2300 3125 50  0001 C CNN
+F 1 "PWR_FLAG" V 2300 3178 50  0000 L CNN
+F 2 "" H 2300 3050 50  0001 C CNN
+F 3 "~" H 2300 3050 50  0001 C CNN
+	1    2300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 3050 2200 3050
+Connection ~ 2200 3050
+Wire Wire Line
+	2200 3050 2200 3100
 $EndSCHEMATC

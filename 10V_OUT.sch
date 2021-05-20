@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
-Title "PWM to 10 V Output Circuit"
+Sheet 2 3
+Title "PWM to 10 V Output"
 Date "2021-05-20"
 Rev "1"
 Comp "Harsch Systems"
