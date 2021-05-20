@@ -1,1 +1,1 @@
-# RP2040_Board
+# RP2040_Board_KiCAD
