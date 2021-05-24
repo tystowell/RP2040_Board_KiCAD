@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "10V to 3.3V Input"
 Date "2021-05-20"
 Rev "1"
@@ -91,10 +91,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 3600 5400 3600
 Connection ~ 5050 3600
-Wire Wire Line
-	5050 4300 5400 4300
-Connection ~ 5050 4300
-Connection ~ 5400 4300
 $Comp
 L Device:R_US R?
 U 1 1 60A9BABC
