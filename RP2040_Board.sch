@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Pi Pico Test Board"
 Date "2021-05-20"
 Rev "1"
@@ -148,5 +148,14 @@ F0 "PWM to 20mA Output" 50
 F1 "20mA_OUT.sch" 50
 F2 "PWM" I L 7650 4600 50 
 F3 "OUT" I R 8250 4600 50 
+$EndSheet
+$Sheet
+S 7050 2300 600  600 
+U 60AC3F67
+F0 "20mA to 3.3V Input" 50
+F1 "20mA_IN.sch" 50
+F2 "C_IN" I R 7650 2450 50 
+F3 "C_OUT" I R 7650 2750 50 
+F4 "OUT" I L 7050 2600 50 
 $EndSheet
 $EndSCHEMATC
