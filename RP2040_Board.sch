@@ -13,14 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 6650 3750 600  600 
-U 60A68B69
-F0 "PWM to 10V Output" 50
-F1 "10V_OUT.sch" 50
-F2 "PWM" I L 6650 4050 50 
-F3 "OUT" I R 7250 4050 50 
-$EndSheet
 $Comp
 L power:GNDREF #PWR0101
 U 1 1 60A8290A
@@ -157,5 +149,13 @@ F1 "20mA_IN.sch" 50
 F2 "C_IN" I R 7650 2450 50 
 F3 "C_OUT" I R 7650 2750 50 
 F4 "OUT" I L 7050 2600 50 
+$EndSheet
+$Sheet
+S 6650 3750 600  600 
+U 60A68B69
+F0 "PWM to 10V Output" 50
+F1 "10V_OUT.sch" 50
+F2 "PWM" I L 6650 4050 50 
+F3 "OUT" I R 7250 4050 50 
 $EndSheet
 $EndSCHEMATC
