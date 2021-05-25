@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -141,7 +141,7 @@ Connection ~ 4200 4850
 Wire Wire Line
 	4200 4850 4200 4000
 Text GLabel 5700 3100 1    50   Input ~ 0
-10V
+5V
 Wire Wire Line
 	5700 3350 6200 3350
 Wire Wire Line
@@ -156,8 +156,6 @@ Wire Wire Line
 Wire Wire Line
 	6500 4850 6500 4700
 Connection ~ 5950 4850
-Wire Wire Line
-	6500 3850 6500 4100
 $Comp
 L Device:R_US R15
 U 1 1 60AD8205
@@ -206,10 +204,6 @@ Wire Wire Line
 	8000 3550 8550 3550
 Connection ~ 8000 3550
 Wire Wire Line
-	5700 3350 5700 3850
-Wire Wire Line
-	5700 3850 6500 3850
-Wire Wire Line
 	6800 3550 6900 3550
 Wire Wire Line
 	6900 3550 6900 3600
@@ -224,4 +218,10 @@ Wire Wire Line
 	7200 3350 6800 3350
 Wire Wire Line
 	6900 3900 6900 4000
+Text GLabel 6400 3950 0    50   Input ~ 0
+10V
+Wire Wire Line
+	6400 3950 6500 3950
+Wire Wire Line
+	6500 3950 6500 4100
 $EndSCHEMATC
