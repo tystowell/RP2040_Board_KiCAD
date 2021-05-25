@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Digital Input"
+Date "2021-05-25"
+Rev "1"
+Comp "Harsch Systems"
+Comment1 "Tyler Stowell"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -29,10 +29,10 @@ F 3 "~" H 5050 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US 4.7k
+L Device:R_US 4.7k1
 U 1 1 60B2A02B
 P 5050 4400
-F 0 "4.7k" H 4982 4354 50  0000 R CNN
+F 0 "4.7k1" H 4982 4354 50  0000 R CNN
 F 1 "R_US" H 4982 4445 50  0000 R CNN
 F 2 "" V 5090 4390 50  0001 C CNN
 F 3 "~" H 5050 4400 50  0001 C CNN
@@ -119,6 +119,24 @@ Wire Wire Line
 Connection ~ 6650 4100
 Wire Wire Line
 	6650 4100 6850 4100
-Text Notes 4550 4050 0    50   ~ 0
+Text Notes 4500 4250 0    50   ~ 0
 Status LED
+Wire Notes Line
+	4950 3850 5350 3850
+Wire Notes Line
+	5350 3850 5350 4550
+Wire Notes Line
+	5350 4550 4950 4550
+Wire Notes Line
+	4950 4550 4950 3850
+Wire Notes Line
+	6800 3700 7500 3700
+Wire Notes Line
+	7500 3700 7500 4200
+Wire Notes Line
+	7500 4200 6800 4200
+Wire Notes Line
+	6800 4200 6800 3700
+Text Notes 6850 3650 0    50   ~ 0
+Pull Up Resistor
 $EndSCHEMATC

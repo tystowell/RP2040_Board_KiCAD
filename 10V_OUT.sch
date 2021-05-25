@@ -64,34 +64,34 @@ GND
 $Comp
 L Amplifier_Operational:LM321 U1
 U 1 1 60A73539
-P 6850 3450
-F 0 "U1" H 7194 3496 50  0000 L CNN
-F 1 "LM321" H 7194 3405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6850 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6850 3450 50  0001 C CNN
-	1    6850 3450
+P 7150 3450
+F 0 "U1" H 7250 3350 50  0000 L CNN
+F 1 "LM321" H 7250 3250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7150 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 7150 3450 50  0001 C CNN
+	1    7150 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R4
 U 1 1 60A77E98
-P 6800 4350
-F 0 "R4" V 6595 4350 50  0000 C CNN
-F 1 "22k" V 6686 4350 50  0000 C CNN
-F 2 "" V 6840 4340 50  0001 C CNN
-F 3 "~" H 6800 4350 50  0001 C CNN
-	1    6800 4350
+P 7100 4350
+F 0 "R4" V 6895 4350 50  0000 C CNN
+F 1 "22k" V 6986 4350 50  0000 C CNN
+F 2 "" V 7140 4340 50  0001 C CNN
+F 3 "~" H 7100 4350 50  0001 C CNN
+	1    7100 4350
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R3
 U 1 1 60A78F26
-P 6300 4350
-F 0 "R3" V 6095 4350 50  0000 C CNN
-F 1 "10k" V 6186 4350 50  0000 C CNN
-F 2 "" V 6340 4340 50  0001 C CNN
-F 3 "~" H 6300 4350 50  0001 C CNN
-	1    6300 4350
+P 6600 4350
+F 0 "R3" V 6395 4350 50  0000 C CNN
+F 1 "10k" V 6486 4350 50  0000 C CNN
+F 2 "" V 6640 4340 50  0001 C CNN
+F 3 "~" H 6600 4350 50  0001 C CNN
+	1    6600 4350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -108,23 +108,18 @@ Wire Wire Line
 Wire Wire Line
 	5950 3350 5950 3550
 Wire Wire Line
-	5950 3350 6550 3350
-Connection ~ 5950 3350
+	7450 3450 7600 3450
 Wire Wire Line
-	7150 3450 7300 3450
+	7600 3450 7600 4350
 Wire Wire Line
-	7300 3450 7300 4350
+	7600 4350 7250 4350
 Wire Wire Line
-	7300 4350 6950 4350
+	6950 4350 6850 4350
 Wire Wire Line
-	6650 4350 6550 4350
+	6850 3550 6850 4350
+Connection ~ 6850 4350
 Wire Wire Line
-	6550 3550 6550 4350
-Connection ~ 6550 4350
-Wire Wire Line
-	6550 4350 6450 4350
-Wire Wire Line
-	6150 4350 5950 4350
+	6850 4350 6750 4350
 Wire Wire Line
 	5250 4050 5250 4350
 Connection ~ 5250 4350
@@ -132,24 +127,49 @@ Wire Wire Line
 	5250 4350 4550 4350
 Wire Wire Line
 	5950 4050 5950 4350
-Connection ~ 5950 4350
 Wire Wire Line
 	5950 4350 5250 4350
-Text HLabel 7650 3450 2    50   Input ~ 0
+Text HLabel 7950 3450 2    50   Input ~ 0
 OUT
 Wire Wire Line
-	7300 3450 7650 3450
-Connection ~ 7300 3450
-Text GLabel 6950 3900 2    50   Input ~ 0
+	7600 3450 7950 3450
+Connection ~ 7600 3450
+Text GLabel 7250 3900 2    50   Input ~ 0
 GND
 Wire Wire Line
-	6750 3750 6750 3900
+	7050 3750 7050 3900
 Wire Wire Line
-	6750 3900 6950 3900
-Text GLabel 6950 3000 2    50   Input ~ 0
+	7050 3900 7250 3900
+Text GLabel 7250 3000 2    50   Input ~ 0
 24V
 Wire Wire Line
-	6750 3150 6750 3000
+	7050 3150 7050 3000
 Wire Wire Line
-	6750 3000 6950 3000
+	7050 3000 7250 3000
+Wire Wire Line
+	5950 4350 6450 4350
+Connection ~ 5950 4350
+Wire Wire Line
+	6850 3350 5950 3350
+Connection ~ 5950 3350
+Wire Notes Line
+	4650 3100 6400 3100
+Wire Notes Line
+	6400 3100 6400 4450
+Wire Notes Line
+	6400 4450 4650 4450
+Wire Notes Line
+	4650 4450 4650 3100
+Text Notes 5050 4550 0    50   ~ 0
+2nd Order Low Pass Filter
+Wire Notes Line
+	6450 2900 7750 2900
+Wire Notes Line
+	7750 2900 7750 4450
+Wire Notes Line
+	7750 4450 6450 4450
+Wire Notes Line
+	6450 4450 6450 2900
+Text Notes 6650 4550 0    50   ~ 0
+Non-Inverting Amplifier
 $EndSCHEMATC

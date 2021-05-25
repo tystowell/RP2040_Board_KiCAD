@@ -19,8 +19,8 @@ U 1 1 60A952AD
 P 4700 3600
 AR Path="/60A68B69/60A952AD" Ref="R?"  Part="1" 
 AR Path="/60A8EFC5/60A952AD" Ref="R5"  Part="1" 
-F 0 "R5" V 4495 3600 50  0000 C CNN
-F 1 "22k" V 4586 3600 50  0000 C CNN
+F 0 "R5" V 4500 3600 50  0000 C CNN
+F 1 "22k" V 4600 3600 50  0000 C CNN
 F 2 "" V 4740 3590 50  0001 C CNN
 F 3 "~" H 4700 3600 50  0001 C CNN
 	1    4700 3600
@@ -34,8 +34,8 @@ U 1 1 60A952C7
 P 5700 3700
 AR Path="/60A68B69/60A952C7" Ref="U?"  Part="1" 
 AR Path="/60A8EFC5/60A952C7" Ref="U3"  Part="1" 
-F 0 "U3" H 6044 3746 50  0000 L CNN
-F 1 "LM321" H 6044 3655 50  0000 L CNN
+F 0 "U3" H 5800 3600 50  0000 L CNN
+F 1 "LM321" H 5800 3500 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5700 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 5700 3700 50  0001 C CNN
 	1    5700 3700
@@ -47,7 +47,7 @@ Wire Wire Line
 	4850 3600 5050 3600
 Wire Wire Line
 	5050 3800 5050 3600
-Text HLabel 7000 3700 2    50   Input ~ 0
+Text HLabel 7300 3700 2    50   Input ~ 0
 OUT
 Text GLabel 5800 4150 2    50   Input ~ 0
 GND
@@ -97,8 +97,8 @@ U 1 1 60A9BABC
 P 6500 3700
 AR Path="/60A68B69/60A9BABC" Ref="R?"  Part="1" 
 AR Path="/60A8EFC5/60A9BABC" Ref="R7"  Part="1" 
-F 0 "R7" V 6295 3700 50  0000 C CNN
-F 1 "2.2k" V 6386 3700 50  0000 C CNN
+F 0 "R7" V 6300 3700 50  0000 C CNN
+F 1 "2.2k" V 6400 3700 50  0000 C CNN
 F 2 "" V 6540 3690 50  0001 C CNN
 F 3 "~" H 6500 3700 50  0001 C CNN
 	1    6500 3700
@@ -119,13 +119,43 @@ Wire Wire Line
 	6650 3700 6850 3700
 Wire Wire Line
 	6850 3800 6850 3700
-Connection ~ 6850 3700
-Wire Wire Line
-	6850 3700 7000 3700
 Wire Wire Line
 	6150 3700 6350 3700
 Connection ~ 6150 3700
 Wire Wire Line
 	6150 4300 6850 4300
 Connection ~ 6150 4300
+Wire Notes Line
+	4100 3350 5300 3350
+Wire Notes Line
+	5300 3350 5300 4400
+Wire Notes Line
+	5300 4400 4100 4400
+Wire Notes Line
+	4100 4400 4100 3350
+Text Notes 5000 4500 2    50   ~ 0
+Voltage Divider
+Wire Notes Line
+	5350 3150 6300 3150
+Wire Notes Line
+	6300 3150 6300 4400
+Wire Notes Line
+	6300 4400 5350 4400
+Wire Notes Line
+	5350 4400 5350 3150
+Wire Wire Line
+	6850 3700 7300 3700
+Connection ~ 6850 3700
+Wire Notes Line
+	6350 3450 6350 4400
+Wire Notes Line
+	6350 4400 7250 4400
+Wire Notes Line
+	7250 4400 7250 3450
+Wire Notes Line
+	7250 3450 6350 3450
+Text Notes 6150 4500 2    50   ~ 0
+Voltage Follower
+Text Notes 7300 4500 2    50   ~ 0
+1st Order Low Pass Filter
 $EndSCHEMATC

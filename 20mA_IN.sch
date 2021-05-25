@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "20mA to 3.3V Input"
+Date "2021-05-25"
+Rev "1"
+Comp "Harsch Systems"
+Comment1 "Tyler Stowell"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -75,20 +75,6 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6500 3450 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM321 U?
-U 1 1 60ACD8A3
-P 6600 4400
-AR Path="/60A68B69/60ACD8A3" Ref="U?"  Part="1" 
-AR Path="/60A8EFC5/60ACD8A3" Ref="U?"  Part="1" 
-AR Path="/60AC3F67/60ACD8A3" Ref="U7"  Part="1" 
-F 0 "U7" H 6944 4446 50  0000 L CNN
-F 1 "LM321" H 6944 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6600 4400 50  0001 C CNN
-	1    6600 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R14
 U 1 1 60ACED9B
 P 5950 4650
@@ -149,7 +135,7 @@ Wire Wire Line
 Connection ~ 5700 3350
 Wire Wire Line
 	5700 3100 5700 3350
-Text GLabel 6900 4000 3    50   Input ~ 0
+Text GLabel 6850 3950 0    50   Input ~ 0
 GND
 Wire Wire Line
 	5950 4850 6500 4850
@@ -208,20 +194,62 @@ Wire Wire Line
 Wire Wire Line
 	6900 3550 6900 3600
 Connection ~ 6900 3550
+Text GLabel 6400 3950 0    50   Input ~ 0
+5V
+Wire Wire Line
+	6400 3950 6500 3950
+Text Notes 7600 5250 2    50   ~ 0
+Since V over R13 = V over R14 by presence of U7, I into U5 = I into U6
+Wire Notes Line
+	7400 3250 8400 3250
+Wire Notes Line
+	8400 3250 8400 4300
+Wire Notes Line
+	8400 4300 7400 4300
+Wire Notes Line
+	7400 4300 7400 3250
+Text Notes 8400 3200 2    50   ~ 0
+1st Order Low Pass Filter
+Wire Wire Line
+	6900 3900 6900 3950
+Wire Wire Line
+	6900 3950 6850 3950
+Wire Wire Line
+	6500 3950 6500 4100
+$Comp
+L Amplifier_Operational:LM321 U?
+U 1 1 60ACD8A3
+P 6600 4400
+AR Path="/60A68B69/60ACD8A3" Ref="U?"  Part="1" 
+AR Path="/60A8EFC5/60ACD8A3" Ref="U?"  Part="1" 
+AR Path="/60AC3F67/60ACD8A3" Ref="U7"  Part="1" 
+F 0 "U7" H 6700 4300 50  0000 L CNN
+F 1 "LM321" H 6700 4200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6600 4400 50  0001 C CNN
+	1    6600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4400 7050 4400
+Wire Wire Line
+	6500 4100 6850 4100
+Connection ~ 6500 4100
+$Comp
+L Transistor_BJT:S8050 Q?
+U 1 1 60B7546B
+P 7050 4200
+F 0 "Q?" V 7350 4200 50  0000 C CNN
+F 1 "S8050" V 7250 4200 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7250 4125 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 7050 4200 50  0001 L CNN
+	1    7050 4200
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	6900 3550 7450 3550
 Wire Wire Line
-	6900 4400 7200 4400
+	7250 4100 7250 3350
 Wire Wire Line
-	7200 4400 7200 3350
-Wire Wire Line
-	7200 3350 6800 3350
-Wire Wire Line
-	6900 3900 6900 4000
-Text GLabel 6400 3950 0    50   Input ~ 0
-10V
-Wire Wire Line
-	6400 3950 6500 3950
-Wire Wire Line
-	6500 3950 6500 4100
+	7250 3350 6800 3350
 $EndSCHEMATC
