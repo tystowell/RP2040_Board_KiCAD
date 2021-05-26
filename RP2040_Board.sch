@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Pi Pico Test Board"
 Date "2021-05-20"
 Rev "1"
@@ -138,7 +138,6 @@ F2 "PWM" I R 4600 3000 50
 F3 "OUT" I L 4000 3000 50 
 $EndSheet
 NoConn ~ 5050 2750
-NoConn ~ 5050 2950
 NoConn ~ 5050 3050
 NoConn ~ 5050 3150
 NoConn ~ 5050 3250
@@ -185,12 +184,6 @@ Wire Wire Line
 	5000 2550 5000 2200
 Wire Wire Line
 	5000 2200 4600 2200
-Wire Wire Line
-	5050 2650 5000 2650
-Wire Wire Line
-	5000 2650 5000 3000
-Wire Wire Line
-	5000 3000 4600 3000
 Wire Wire Line
 	6450 3350 6500 3350
 Wire Wire Line
@@ -292,38 +285,22 @@ F 3 "~" H 3550 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5750 4750 3900 4750
-Wire Wire Line
-	3900 3050 3750 3050
-Wire Wire Line
 	4000 3000 3900 3000
 Wire Wire Line
 	3900 3000 3900 2950
 Wire Wire Line
 	3900 2950 3750 2950
-Wire Wire Line
-	3900 4750 3900 3200
-Wire Wire Line
-	3900 3200 3450 3200
-Wire Wire Line
-	3450 3200 3450 2350
-Wire Wire Line
-	3450 2350 3900 2350
-Wire Wire Line
-	3900 2350 3900 2250
-Wire Wire Line
-	3900 2250 3750 2250
-Connection ~ 3900 3200
-Wire Wire Line
-	3900 3200 3900 3050
 $Sheet
 S 4000 3500 600  600 
 U 60B28EA9
 F0 "Digital Input" 50
 F1 "DIG_IN.sch" 50
-F2 "IN+" I L 4000 3650 50 
-F3 "IN-" I L 4000 3950 50 
-F4 "OUT" I R 4600 3800 50 
+F2 "IN+1" I L 4000 3600 50 
+F3 "IN-1" I L 4000 3700 50 
+F4 "OUT1" I R 4600 3650 50 
+F5 "IN+2" I L 4000 3900 50 
+F6 "IN-2" I L 4000 4000 50 
+F7 "OUT2" I R 4600 3950 50 
 $EndSheet
 Text GLabel 6550 2900 2    50   Input ~ 0
 3.3V
@@ -358,39 +335,76 @@ F 3 "" H 1800 3900 50  0001 C CNN
 	1    1800 3900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4600 3800 4950 3800
-Wire Wire Line
-	4950 3800 4950 2850
-Wire Wire Line
-	4950 2850 5050 2850
 $Comp
 L Connector:Conn_01x02_Female J5
 U 1 1 60B47D03
-P 3550 3850
-F 0 "J5" H 3442 3525 50  0000 C CNN
-F 1 "mA_OUT" H 3442 3616 50  0000 C CNN
-F 2 "" H 3550 3850 50  0001 C CNN
-F 3 "~" H 3550 3850 50  0001 C CNN
-	1    3550 3850
+P 3650 3700
+F 0 "J5" H 3542 3375 50  0000 C CNN
+F 1 "DIG_OUT" H 3542 3466 50  0000 C CNN
+F 2 "" H 3650 3700 50  0001 C CNN
+F 3 "~" H 3650 3700 50  0001 C CNN
+	1    3650 3700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4000 3950 3800 3950
-Wire Wire Line
-	3800 3950 3800 3850
-Wire Wire Line
-	3800 3850 3750 3850
-Wire Wire Line
-	4000 3650 3800 3650
-Wire Wire Line
-	3800 3650 3800 3750
-Wire Wire Line
-	3800 3750 3750 3750
 Wire Wire Line
 	6450 2950 6500 2950
 Wire Wire Line
 	6500 2950 6500 2900
 Wire Wire Line
 	6500 2900 6550 2900
+Wire Wire Line
+	5050 2950 5000 2950
+Wire Wire Line
+	5000 2950 5000 3950
+Wire Wire Line
+	5000 3950 4600 3950
+Wire Wire Line
+	5050 2850 4950 2850
+Wire Wire Line
+	4950 2850 4950 3650
+Wire Wire Line
+	4950 3650 4600 3650
+Wire Wire Line
+	5050 2650 4900 2650
+Wire Wire Line
+	4900 2650 4900 3000
+Wire Wire Line
+	4900 3000 4600 3000
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 60BADF7F
+P 3650 4000
+F 0 "J?" H 3550 4100 50  0000 C CNN
+F 1 "DIG_OUT" H 3550 4200 50  0000 C CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "~" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 3600 3850 3600
+Wire Wire Line
+	4000 3700 3850 3700
+Wire Wire Line
+	4000 3900 3850 3900
+Wire Wire Line
+	4000 4000 3850 4000
+Text GLabel 3800 3100 3    50   Input ~ 0
+GND
+Text GLabel 3800 2300 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3800 2300 3800 2250
+Wire Wire Line
+	3800 2250 3750 2250
+Wire Wire Line
+	3800 3100 3800 3050
+Wire Wire Line
+	3800 3050 3750 3050
+$Sheet
+S 4000 4300 600  600 
+U 60BBF151
+F0 "Digital Output" 50
+F1 "DIG_OUT.sch" 50
+$EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title "20mA to 3.3V Input"
 Date "2021-05-25"
 Rev "1"
@@ -195,7 +195,7 @@ Wire Wire Line
 	6900 3550 6900 3600
 Connection ~ 6900 3550
 Text GLabel 6400 3950 0    50   Input ~ 0
-5V
+24V
 Wire Wire Line
 	6400 3950 6500 3950
 Text Notes 7600 5250 2    50   ~ 0
@@ -231,25 +231,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6600 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 4400 7050 4400
-Wire Wire Line
-	6500 4100 6850 4100
-Connection ~ 6500 4100
-$Comp
-L Transistor_BJT:S8050 Q?
-U 1 1 60B7546B
-P 7050 4200
-F 0 "Q?" V 7350 4200 50  0000 C CNN
-F 1 "S8050" V 7250 4200 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7250 4125 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 7050 4200 50  0001 L CNN
-	1    7050 4200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	6900 3550 7450 3550
 Wire Wire Line
-	7250 4100 7250 3350
-Wire Wire Line
 	7250 3350 6800 3350
+Wire Wire Line
+	6900 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 3350
 $EndSCHEMATC
