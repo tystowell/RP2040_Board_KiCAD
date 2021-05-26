@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 8 8
 Title "Digital Output"
 Date "2021-05-26"
 Rev "1"
@@ -13,130 +13,324 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4200 3950 0    50   Input ~ 0
-IN
+Text HLabel 7150 2950 2    50   Input ~ 0
+OUT1
+Text HLabel 4650 2850 0    50   Input ~ 0
+IN1
 $Comp
 L Device:LED D?
-U 1 1 60BD3DAF
-P 4650 4200
-AR Path="/60B28EA9/60BD3DAF" Ref="D?"  Part="1" 
-AR Path="/60BBF151/60BD3DAF" Ref="D?"  Part="1" 
-F 0 "D?" V 4689 4082 50  0000 R CNN
-F 1 "LED" V 4598 4082 50  0000 R CNN
-F 2 "" H 4650 4200 50  0001 C CNN
-F 3 "~" H 4650 4200 50  0001 C CNN
-	1    4650 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 60BD3DB5
-P 4650 4600
-AR Path="/60B28EA9/60BD3DB5" Ref="R?"  Part="1" 
-AR Path="/60BBF151/60BD3DB5" Ref="R?"  Part="1" 
-F 0 "R?" H 4582 4554 50  0000 R CNN
-F 1 "4.7k" H 4582 4645 50  0000 R CNN
-F 2 "" V 4690 4590 50  0001 C CNN
-F 3 "~" H 4650 4600 50  0001 C CNN
-	1    4650 4600
+U 1 1 60C18039
+P 5000 2850
+AR Path="/60B28EA9/60C18039" Ref="D?"  Part="1" 
+AR Path="/60BBF151/60C18039" Ref="D?"  Part="1" 
+F 0 "D?" H 4993 2595 50  0000 C CNN
+F 1 "LED" H 4993 2686 50  0000 C CNN
+F 2 "" H 5000 2850 50  0001 C CNN
+F 3 "~" H 5000 2850 50  0001 C CNN
+	1    5000 2850
 	-1   0    0    1   
 $EndComp
 $Comp
 L Isolator:PC817 U?
-U 1 1 60BD3DBB
-P 6000 4400
-AR Path="/60AC3F67/60BD3DBB" Ref="U?"  Part="1" 
-AR Path="/60B28EA9/60BD3DBB" Ref="U?"  Part="1" 
-AR Path="/60BBF151/60BD3DBB" Ref="U?"  Part="1" 
-F 0 "U?" H 6000 4725 50  0000 C CNN
-F 1 "PC817" H 6000 4634 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 5800 4200 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6000 4400 50  0001 L CNN
-	1    6000 4400
+U 1 1 60C1803F
+P 5850 3300
+AR Path="/60AC3F67/60C1803F" Ref="U?"  Part="1" 
+AR Path="/60B28EA9/60C1803F" Ref="U?"  Part="1" 
+AR Path="/60BBF151/60C1803F" Ref="U?"  Part="1" 
+F 0 "U?" H 5850 3625 50  0000 C CNN
+F 1 "PC817" H 5850 3534 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5650 3100 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5850 3300 50  0001 L CNN
+	1    5850 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 3950 5700 4300
+	5550 2850 5550 3200
 Wire Wire Line
-	5700 4850 5700 4500
-Wire Wire Line
-	4200 3950 4650 3950
+	5550 3750 5550 3400
 $Comp
 L Device:R_US R?
-U 1 1 60BD3DC4
-P 5150 4850
-AR Path="/60B28EA9/60BD3DC4" Ref="R?"  Part="1" 
-AR Path="/60BBF151/60BD3DC4" Ref="R?"  Part="1" 
-F 0 "R?" V 4945 4850 50  0000 C CNN
-F 1 "4.7k" V 5036 4850 50  0000 C CNN
-F 2 "" V 5190 4840 50  0001 C CNN
-F 3 "~" H 5150 4850 50  0001 C CNN
-	1    5150 4850
+U 1 1 60C18047
+P 5000 3750
+AR Path="/60B28EA9/60C18047" Ref="R?"  Part="1" 
+AR Path="/60BBF151/60C18047" Ref="R?"  Part="1" 
+F 0 "R?" V 4795 3750 50  0000 C CNN
+F 1 "470" V 4886 3750 50  0000 C CNN
+F 2 "" V 5040 3740 50  0001 C CNN
+F 3 "~" H 5000 3750 50  0001 C CNN
+	1    5000 3750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4200 4850 4650 4850
-Wire Wire Line
-	4650 4750 4650 4850
-Connection ~ 4650 4850
-Wire Wire Line
-	4650 4850 5000 4850
-Wire Wire Line
-	4650 4450 4650 4350
-Wire Wire Line
-	4650 4050 4650 3950
-Text GLabel 6500 4800 3    50   Input ~ 0
+Text GLabel 6200 3450 3    50   Input ~ 0
 GND
 Wire Wire Line
-	6300 4300 6500 4300
-Text GLabel 6500 4100 1    50   Input ~ 0
-24V
+	6150 3400 6200 3400
 Wire Wire Line
-	6300 4500 6350 4500
-Wire Wire Line
-	6350 4500 6350 4550
-Text HLabel 7450 4500 2    50   Input ~ 0
-OUT
-Text Notes 4100 4450 0    50   ~ 0
+	6200 3400 6200 3450
+Text Notes 4800 3050 0    50   ~ 0
 Status LED
-Wire Notes Line
-	4550 4050 4950 4050
-Wire Notes Line
-	4950 4050 4950 4750
-Wire Notes Line
-	4950 4750 4550 4750
-Wire Notes Line
-	4550 4750 4550 4050
 $Comp
 L Device:D D?
-U 1 1 60BD3DEC
-P 5500 4400
-AR Path="/60B28EA9/60BD3DEC" Ref="D?"  Part="1" 
-AR Path="/60BBF151/60BD3DEC" Ref="D?"  Part="1" 
-F 0 "D?" V 5454 4480 50  0000 L CNN
-F 1 "D" V 5545 4480 50  0000 L CNN
-F 2 "" H 5500 4400 50  0001 C CNN
-F 3 "~" H 5500 4400 50  0001 C CNN
-	1    5500 4400
+U 1 1 60C18065
+P 5350 3300
+AR Path="/60B28EA9/60C18065" Ref="D?"  Part="1" 
+AR Path="/60BBF151/60C18065" Ref="D?"  Part="1" 
+F 0 "D?" V 5304 3380 50  0000 L CNN
+F 1 "D" V 5395 3380 50  0000 L CNN
+F 2 "" H 5350 3300 50  0001 C CNN
+F 3 "~" H 5350 3300 50  0001 C CNN
+	1    5350 3300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4650 3950 5500 3950
-Connection ~ 4650 3950
+	5550 3750 5350 3750
 Wire Wire Line
-	5700 4850 5500 4850
+	5350 3450 5350 3750
+Connection ~ 5350 3750
 Wire Wire Line
-	5500 4550 5500 4850
-Connection ~ 5500 4850
+	5350 3750 5150 3750
 Wire Wire Line
-	5500 4850 5300 4850
+	5350 3150 5350 2850
 Wire Wire Line
-	5500 4250 5500 3950
-Connection ~ 5500 3950
+	5350 2850 5550 2850
 Wire Wire Line
-	5500 3950 5700 3950
-Text GLabel 4200 4850 0    50   Input ~ 0
+	5350 2850 5150 2850
+Connection ~ 5350 2850
+Wire Wire Line
+	4650 2850 4850 2850
+Wire Wire Line
+	4650 3750 4850 3750
+Wire Notes Line
+	4800 2950 5200 2950
+Wire Notes Line
+	5200 2950 5200 2550
+Wire Notes Line
+	5200 2550 4800 2550
+Wire Notes Line
+	4800 2550 4800 2950
+Text GLabel 4650 3750 0    50   Input ~ 0
+GND
+$Comp
+L Transistor_BJT:S8050 Q?
+U 1 1 60C18DF6
+P 6600 3200
+F 0 "Q?" H 6790 3246 50  0000 L CNN
+F 1 "S8050" H 6790 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6800 3125 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 6600 3200 50  0001 L CNN
+	1    6600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3400 6700 3400
+Connection ~ 6200 3400
+Wire Wire Line
+	6150 3200 6200 3200
+$Comp
+L Device:R_US R?
+U 1 1 60C19BF3
+P 6200 2750
+F 0 "R?" H 6268 2796 50  0000 L CNN
+F 1 "4.7k" H 6268 2705 50  0000 L CNN
+F 2 "" V 6240 2740 50  0001 C CNN
+F 3 "~" H 6200 2750 50  0001 C CNN
+	1    6200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60C1B077
+P 6700 2750
+F 0 "R?" H 6768 2796 50  0000 L CNN
+F 1 "4.7k" H 6768 2705 50  0000 L CNN
+F 2 "" V 6740 2740 50  0001 C CNN
+F 3 "~" H 6700 2750 50  0001 C CNN
+	1    6700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2900 6200 3200
+Connection ~ 6200 3200
+Wire Wire Line
+	6200 3200 6400 3200
+Text GLabel 6450 2500 1    50   Input ~ 0
+24V
+Wire Wire Line
+	6200 2600 6200 2550
+Wire Wire Line
+	6200 2550 6450 2550
+Wire Wire Line
+	6700 2550 6700 2600
+Wire Wire Line
+	6450 2550 6450 2500
+Connection ~ 6450 2550
+Wire Wire Line
+	6450 2550 6700 2550
+Wire Wire Line
+	6700 2900 6700 2950
+Wire Wire Line
+	6700 2950 7150 2950
+Connection ~ 6700 2950
+Wire Wire Line
+	6700 2950 6700 3000
+Text HLabel 4600 4400 0    50   Input ~ 0
+IN2
+$Comp
+L Device:LED D?
+U 1 1 60C21692
+P 4950 4400
+AR Path="/60B28EA9/60C21692" Ref="D?"  Part="1" 
+AR Path="/60BBF151/60C21692" Ref="D?"  Part="1" 
+F 0 "D?" H 4943 4145 50  0000 C CNN
+F 1 "LED" H 4943 4236 50  0000 C CNN
+F 2 "" H 4950 4400 50  0001 C CNN
+F 3 "~" H 4950 4400 50  0001 C CNN
+	1    4950 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 60C21698
+P 5800 4850
+AR Path="/60AC3F67/60C21698" Ref="U?"  Part="1" 
+AR Path="/60B28EA9/60C21698" Ref="U?"  Part="1" 
+AR Path="/60BBF151/60C21698" Ref="U?"  Part="1" 
+F 0 "U?" H 5800 5175 50  0000 C CNN
+F 1 "PC817" H 5800 5084 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5600 4650 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5800 4850 50  0001 L CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4400 5500 4750
+Wire Wire Line
+	5500 5300 5500 4950
+$Comp
+L Device:R_US R?
+U 1 1 60C216A0
+P 4950 5300
+AR Path="/60B28EA9/60C216A0" Ref="R?"  Part="1" 
+AR Path="/60BBF151/60C216A0" Ref="R?"  Part="1" 
+F 0 "R?" V 4745 5300 50  0000 C CNN
+F 1 "470" V 4836 5300 50  0000 C CNN
+F 2 "" V 4990 5290 50  0001 C CNN
+F 3 "~" H 4950 5300 50  0001 C CNN
+	1    4950 5300
+	0    1    1    0   
+$EndComp
+Text GLabel 6150 5000 3    50   Input ~ 0
 GND
 Wire Wire Line
-	6500 4100 6500 4300
+	6100 4950 6150 4950
+Wire Wire Line
+	6150 4950 6150 5000
+Text Notes 4750 4600 0    50   ~ 0
+Status LED
+$Comp
+L Device:D D?
+U 1 1 60C216AA
+P 5300 4850
+AR Path="/60B28EA9/60C216AA" Ref="D?"  Part="1" 
+AR Path="/60BBF151/60C216AA" Ref="D?"  Part="1" 
+F 0 "D?" V 5254 4930 50  0000 L CNN
+F 1 "D" V 5345 4930 50  0000 L CNN
+F 2 "" H 5300 4850 50  0001 C CNN
+F 3 "~" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5300 5300 5300
+Wire Wire Line
+	5300 5000 5300 5300
+Connection ~ 5300 5300
+Wire Wire Line
+	5300 5300 5100 5300
+Wire Wire Line
+	5300 4700 5300 4400
+Wire Wire Line
+	5300 4400 5500 4400
+Wire Wire Line
+	5300 4400 5100 4400
+Connection ~ 5300 4400
+Wire Wire Line
+	4600 4400 4800 4400
+Wire Wire Line
+	4600 5300 4800 5300
+Wire Notes Line
+	4750 4500 5150 4500
+Wire Notes Line
+	5150 4500 5150 4100
+Wire Notes Line
+	5150 4100 4750 4100
+Wire Notes Line
+	4750 4100 4750 4500
+Text GLabel 4600 5300 0    50   Input ~ 0
+GND
+$Comp
+L Transistor_BJT:S8050 Q?
+U 1 1 60C216BF
+P 6550 4750
+F 0 "Q?" H 6740 4796 50  0000 L CNN
+F 1 "S8050" H 6740 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6750 4675 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 6550 4750 50  0001 L CNN
+	1    6550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4950 6650 4950
+Connection ~ 6150 4950
+Wire Wire Line
+	6100 4750 6150 4750
+$Comp
+L Device:R_US R?
+U 1 1 60C216C8
+P 6150 4300
+F 0 "R?" H 6218 4346 50  0000 L CNN
+F 1 "4.7k" H 6218 4255 50  0000 L CNN
+F 2 "" V 6190 4290 50  0001 C CNN
+F 3 "~" H 6150 4300 50  0001 C CNN
+	1    6150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60C216CE
+P 6650 4300
+F 0 "R?" H 6718 4346 50  0000 L CNN
+F 1 "4.7k" H 6718 4255 50  0000 L CNN
+F 2 "" V 6690 4290 50  0001 C CNN
+F 3 "~" H 6650 4300 50  0001 C CNN
+	1    6650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4450 6150 4750
+Connection ~ 6150 4750
+Wire Wire Line
+	6150 4750 6350 4750
+Text GLabel 6400 4050 1    50   Input ~ 0
+24V
+Wire Wire Line
+	6150 4150 6150 4100
+Wire Wire Line
+	6150 4100 6400 4100
+Wire Wire Line
+	6650 4100 6650 4150
+Wire Wire Line
+	6400 4100 6400 4050
+Connection ~ 6400 4100
+Wire Wire Line
+	6400 4100 6650 4100
+Wire Wire Line
+	6650 4450 6650 4500
+Wire Wire Line
+	6650 4500 7100 4500
+Connection ~ 6650 4500
+Wire Wire Line
+	6650 4500 6650 4550
+Text HLabel 7100 4500 2    50   Input ~ 0
+OUT2
 $EndSCHEMATC
