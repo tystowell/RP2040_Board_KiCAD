@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title "20mA to 3.3V Input"
 Date "2021-05-25"
 Rev "1"
@@ -127,7 +127,7 @@ Connection ~ 4200 4850
 Wire Wire Line
 	4200 4850 4200 4000
 Text GLabel 5700 3100 1    50   Input ~ 0
-5V
+3.3V
 Wire Wire Line
 	5700 3350 6200 3350
 Wire Wire Line
