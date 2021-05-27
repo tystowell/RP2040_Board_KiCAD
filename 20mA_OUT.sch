@@ -18,10 +18,10 @@ L Device:R_US R?
 U 1 1 60ABF5D9
 P 4450 3600
 AR Path="/60A68B69/60ABF5D9" Ref="R?"  Part="1" 
-AR Path="/60ABD2CD/60ABF5D9" Ref="R8"  Part="1" 
-F 0 "R8" V 4245 3600 50  0000 C CNN
+AR Path="/60ABD2CD/60ABF5D9" Ref="R4"  Part="1" 
+F 0 "R4" V 4245 3600 50  0000 C CNN
 F 1 "2.2k" V 4336 3600 50  0000 C CNN
-F 2 "" V 4490 3590 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4490 3590 50  0001 C CNN
 F 3 "~" H 4450 3600 50  0001 C CNN
 	1    4450 3600
 	0    1    1    0   
@@ -33,10 +33,10 @@ L pspice:CAP C?
 U 1 1 60ABF5E0
 P 4800 4050
 AR Path="/60A68B69/60ABF5E0" Ref="C?"  Part="1" 
-AR Path="/60ABD2CD/60ABF5E0" Ref="C4"  Part="1" 
-F 0 "C4" H 4978 4096 50  0000 L CNN
+AR Path="/60ABD2CD/60ABF5E0" Ref="C2"  Part="1" 
+F 0 "C2" H 4978 4096 50  0000 L CNN
 F 1 "2.2μ" H 4978 4005 50  0000 L CNN
-F 2 "" H 4800 4050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4800 4050 50  0001 C CNN
 F 3 "~" H 4800 4050 50  0001 C CNN
 	1    4800 4050
 	1    0    0    -1  
@@ -46,10 +46,10 @@ L Device:R_US R?
 U 1 1 60ABF5E6
 P 5150 3600
 AR Path="/60A68B69/60ABF5E6" Ref="R?"  Part="1" 
-AR Path="/60ABD2CD/60ABF5E6" Ref="R9"  Part="1" 
-F 0 "R9" V 4945 3600 50  0000 C CNN
+AR Path="/60ABD2CD/60ABF5E6" Ref="R5"  Part="1" 
+F 0 "R5" V 4945 3600 50  0000 C CNN
 F 1 "2.2k" V 5036 3600 50  0000 C CNN
-F 2 "" V 5190 3590 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5190 3590 50  0001 C CNN
 F 3 "~" H 5150 3600 50  0001 C CNN
 	1    5150 3600
 	0    1    1    0   
@@ -59,10 +59,10 @@ L pspice:CAP C?
 U 1 1 60ABF5EC
 P 5500 4050
 AR Path="/60A68B69/60ABF5EC" Ref="C?"  Part="1" 
-AR Path="/60ABD2CD/60ABF5EC" Ref="C5"  Part="1" 
-F 0 "C5" H 5678 4096 50  0000 L CNN
+AR Path="/60ABD2CD/60ABF5EC" Ref="C3"  Part="1" 
+F 0 "C3" H 5678 4096 50  0000 L CNN
 F 1 "2.2μ" H 5678 4005 50  0000 L CNN
-F 2 "" H 5500 4050 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 5500 4050 50  0001 C CNN
 F 3 "~" H 5500 4050 50  0001 C CNN
 	1    5500 4050
 	1    0    0    -1  
@@ -70,27 +70,14 @@ $EndComp
 Text GLabel 4100 4600 0    50   Input ~ 0
 GND
 $Comp
-L Amplifier_Operational:LM321 U?
-U 1 1 60ABF5F3
-P 6700 3700
-AR Path="/60A68B69/60ABF5F3" Ref="U?"  Part="1" 
-AR Path="/60ABD2CD/60ABF5F3" Ref="U4"  Part="1" 
-F 0 "U4" H 6800 3600 50  0000 L CNN
-F 1 "LM321" H 6800 3500 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6700 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6700 3700 50  0001 C CNN
-	1    6700 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R?
 U 1 1 60ABF5FF
 P 6150 4600
 AR Path="/60A68B69/60ABF5FF" Ref="R?"  Part="1" 
-AR Path="/60ABD2CD/60ABF5FF" Ref="R10"  Part="1" 
-F 0 "R10" V 5945 4600 50  0000 C CNN
+AR Path="/60ABD2CD/60ABF5FF" Ref="R6"  Part="1" 
+F 0 "R6" V 5945 4600 50  0000 C CNN
 F 1 "150" V 6036 4600 50  0000 C CNN
-F 2 "" V 6190 4590 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6190 4590 50  0001 C CNN
 F 3 "~" H 6150 4600 50  0001 C CNN
 	1    6150 4600
 	0    1    1    0   
@@ -123,18 +110,6 @@ Wire Wire Line
 	5500 4600 4800 4600
 Text HLabel 7600 3250 2    50   Input ~ 0
 OUT
-Text GLabel 6800 4150 2    50   Input ~ 0
-GND
-Wire Wire Line
-	6600 4000 6600 4150
-Wire Wire Line
-	6600 4150 6800 4150
-Text GLabel 6800 3250 2    50   Input ~ 0
-24V
-Wire Wire Line
-	6600 3400 6600 3250
-Wire Wire Line
-	6600 3250 6800 3250
 $Comp
 L Transistor_FET:IRF540N Q1
 U 1 1 60AC135E
@@ -148,8 +123,6 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7350 3700 50
 $EndComp
 Wire Wire Line
 	7000 3700 7150 3700
-Wire Wire Line
-	6400 4600 7450 4600
 Wire Wire Line
 	7450 4600 7450 3900
 Connection ~ 6400 4600
@@ -173,4 +146,17 @@ Wire Notes Line
 	5950 3350 5950 4700
 Wire Notes Line
 	4200 3350 5950 3350
+Wire Wire Line
+	6400 4600 7450 4600
+$Comp
+L Amplifier_Operational:LM324 U2
+U 2 1 60C66065
+P 6700 3700
+F 0 "U2" H 6700 4067 50  0000 C CNN
+F 1 "LM324" H 6700 3976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6650 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6750 3900 50  0001 C CNN
+	2    6700 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

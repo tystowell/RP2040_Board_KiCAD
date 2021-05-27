@@ -19,7 +19,7 @@ U 1 1 60AC4764
 P 4200 3350
 F 0 "R11" V 3995 3350 50  0000 C CNN
 F 1 "150" V 4086 3350 50  0000 C CNN
-F 2 "" V 4240 3340 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3340 50  0001 C CNN
 F 3 "~" H 4200 3350 50  0001 C CNN
 	1    4200 3350
 	0    1    1    0   
@@ -34,16 +34,16 @@ U 1 1 60AC67AD
 P 4200 3850
 F 0 "R12" H 4132 3804 50  0000 R CNN
 F 1 "1M" H 4132 3895 50  0000 R CNN
-F 2 "" V 4240 3840 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3840 50  0001 C CNN
 F 3 "~" H 4200 3850 50  0001 C CNN
 	1    4200 3850
 	-1   0    0    1   
 $EndComp
 $Comp
-L Isolator:PC817 U5
+L Isolator:PC817 U3
 U 1 1 60AC7AD1
 P 4900 3450
-F 0 "U5" H 4900 3775 50  0000 C CNN
+F 0 "U3" H 4900 3775 50  0000 C CNN
 F 1 "PC817" H 4900 3684 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 4700 3250 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4900 3450 50  0001 L CNN
@@ -64,10 +64,10 @@ Wire Wire Line
 Text GLabel 4200 4900 3    50   Input ~ 0
 GND
 $Comp
-L Isolator:PC817 U6
+L Isolator:PC817 U4
 U 1 1 60ACAAFE
 P 6500 3450
-F 0 "U6" H 6500 3775 50  0000 C CNN
+F 0 "U4" H 6500 3775 50  0000 C CNN
 F 1 "PC817" H 6500 3684 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 6300 3250 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6500 3450 50  0001 L CNN
@@ -80,7 +80,7 @@ U 1 1 60ACED9B
 P 5950 4650
 F 0 "R14" H 5882 4604 50  0000 R CNN
 F 1 "47" H 5882 4695 50  0000 R CNN
-F 2 "" V 5990 4640 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5990 4640 50  0001 C CNN
 F 3 "~" H 5950 4650 50  0001 C CNN
 	1    5950 4650
 	-1   0    0    1   
@@ -91,7 +91,7 @@ U 1 1 60ACF42F
 P 5450 4650
 F 0 "R13" H 5382 4604 50  0000 R CNN
 F 1 "47" H 5382 4695 50  0000 R CNN
-F 2 "" V 5490 4640 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5490 4640 50  0001 C CNN
 F 3 "~" H 5450 4650 50  0001 C CNN
 	1    5450 4650
 	-1   0    0    1   
@@ -137,10 +137,6 @@ Wire Wire Line
 	5700 3100 5700 3350
 Text GLabel 6850 3950 0    50   Input ~ 0
 GND
-Wire Wire Line
-	5950 4850 6500 4850
-Wire Wire Line
-	6500 4850 6500 4700
 Connection ~ 5950 4850
 $Comp
 L Device:R_US R15
@@ -148,7 +144,7 @@ U 1 1 60AD8205
 P 6900 3750
 F 0 "R15" H 6832 3704 50  0000 R CNN
 F 1 "150" H 6832 3795 50  0000 R CNN
-F 2 "" V 6940 3740 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6940 3740 50  0001 C CNN
 F 3 "~" H 6900 3750 50  0001 C CNN
 	1    6900 3750
 	-1   0    0    1   
@@ -159,7 +155,7 @@ U 1 1 60ADC110
 P 7600 3550
 F 0 "R16" V 7395 3550 50  0000 C CNN
 F 1 "2.2k" V 7486 3550 50  0000 C CNN
-F 2 "" V 7640 3540 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7640 3540 50  0001 C CNN
 F 3 "~" H 7600 3550 50  0001 C CNN
 	1    7600 3550
 	0    1    1    0   
@@ -170,7 +166,7 @@ U 1 1 60ADCA4E
 P 8000 4000
 F 0 "C6" H 8178 4046 50  0000 L CNN
 F 1 "2.2µ" H 8178 3955 50  0000 L CNN
-F 2 "" H 8000 4000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 8000 4000 50  0001 C CNN
 F 3 "~" H 8000 4000 50  0001 C CNN
 	1    8000 4000
 	1    0    0    -1  
@@ -180,10 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 3550 8000 3750
 Wire Wire Line
-	6500 4850 8000 4850
-Wire Wire Line
 	8000 4850 8000 4250
-Connection ~ 6500 4850
 Text HLabel 8550 3550 2    50   Input ~ 0
 OUT
 Wire Wire Line
@@ -194,10 +187,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 3550 6900 3600
 Connection ~ 6900 3550
-Text GLabel 6400 3950 0    50   Input ~ 0
-24V
-Wire Wire Line
-	6400 3950 6500 3950
 Text Notes 7600 5250 2    50   ~ 0
 Since V over R13 = V over R14 by presence of U7, I into U5 = I into U6
 Wire Notes Line
@@ -215,22 +204,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 3950 6850 3950
 Wire Wire Line
-	6500 3950 6500 4100
-$Comp
-L Amplifier_Operational:LM321 U?
-U 1 1 60ACD8A3
-P 6600 4400
-AR Path="/60A68B69/60ACD8A3" Ref="U?"  Part="1" 
-AR Path="/60A8EFC5/60ACD8A3" Ref="U?"  Part="1" 
-AR Path="/60AC3F67/60ACD8A3" Ref="U7"  Part="1" 
-F 0 "U7" H 6700 4300 50  0000 L CNN
-F 1 "LM321" H 6700 4200 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6600 4400 50  0001 C CNN
-	1    6600 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6900 3550 7450 3550
 Wire Wire Line
 	7250 3350 6800 3350
@@ -238,4 +211,17 @@ Wire Wire Line
 	6900 4400 7250 4400
 Wire Wire Line
 	7250 4400 7250 3350
+Wire Wire Line
+	5950 4850 8000 4850
+$Comp
+L Amplifier_Operational:LM324 U2
+U 3 1 60C6761C
+P 6600 4400
+F 0 "U2" H 6600 4767 50  0000 C CNN
+F 1 "LM324" H 6600 4676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6550 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6650 4600 50  0001 C CNN
+	3    6600 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
