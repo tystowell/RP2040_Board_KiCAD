@@ -13,21 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4500 3000 0    50   Input ~ 0
+Text HLabel 4400 3000 0    50   Input ~ 0
 IN+1
-Text HLabel 4500 3900 0    50   Input ~ 0
+Text HLabel 4400 3900 0    50   Input ~ 0
 IN-1
-$Comp
-L Device:LED D1
-U 1 1 60B29325
-P 4850 3000
-F 0 "D1" H 4843 2745 50  0000 C CNN
-F 1 "LED" H 4843 2836 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4850 3000 50  0001 C CNN
-F 3 "~" H 4850 3000 50  0001 C CNN
-	1    4850 3000
-	-1   0    0    1   
-$EndComp
 $Comp
 L Isolator:PC817 U?
 U 1 1 60B2C751
@@ -48,13 +37,13 @@ Wire Wire Line
 $Comp
 L Device:R_US R17
 U 1 1 60B3319D
-P 4850 3900
-F 0 "R17" V 4645 3900 50  0000 C CNN
-F 1 "4.7k" V 4736 3900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4890 3890 50  0001 C CNN
-F 3 "~" H 4850 3900 50  0001 C CNN
-	1    4850 3900
-	0    1    1    0   
+P 4950 3900
+F 0 "R17" V 5155 3900 50  0000 C CNN
+F 1 "4.7k" V 5064 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4990 3890 50  0001 C CNN
+F 3 "~" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	0    -1   -1   0   
 $EndComp
 Text GLabel 6050 3600 3    50   Input ~ 0
 GND
@@ -90,8 +79,6 @@ Wire Wire Line
 Connection ~ 6200 3350
 Wire Wire Line
 	6200 3350 6400 3350
-Text Notes 4650 3200 0    50   ~ 0
-Status LED
 Wire Notes Line
 	6350 2950 7050 2950
 Wire Notes Line
@@ -117,16 +104,13 @@ Wire Wire Line
 	5400 3900 5200 3900
 Wire Wire Line
 	5200 3600 5200 3900
-Connection ~ 5200 3900
-Wire Wire Line
-	5200 3900 5000 3900
 Wire Wire Line
 	5200 3300 5200 3000
 Wire Wire Line
 	5200 3000 5400 3000
-Text HLabel 4500 4300 0    50   Input ~ 0
+Text HLabel 4400 4300 0    50   Input ~ 0
 IN+2
-Text HLabel 4500 5200 0    50   Input ~ 0
+Text HLabel 4400 5200 0    50   Input ~ 0
 IN-2
 $Comp
 L Isolator:PC817 U?
@@ -208,61 +192,118 @@ Wire Wire Line
 	5200 4600 5200 4300
 Wire Wire Line
 	5200 4300 5400 4300
-Wire Wire Line
-	5200 3000 5000 3000
+$Comp
+L Device:LED D?
+U 1 1 60C8AFD4
+P 4700 3300
+F 0 "D?" V 4750 3150 50  0000 C CNN
+F 1 "LED" V 4650 3150 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4700 3300 50  0001 C CNN
+F 3 "~" H 4700 3300 50  0001 C CNN
+	1    4700 3300
+	0    -1   -1   0   
+$EndComp
+Text Notes 4100 3350 0    50   ~ 0
+Status LED
+Wire Notes Line
+	4550 3500 4950 3500
+Wire Notes Line
+	4950 3100 4550 3100
+Wire Notes Line
+	4550 3100 4550 3500
+Wire Notes Line
+	4950 3500 4950 3100
 Connection ~ 5200 3000
 Wire Wire Line
-	4500 3000 4700 3000
-Wire Wire Line
-	4500 3900 4700 3900
-Wire Notes Line
-	4650 3100 5050 3100
-Wire Notes Line
-	5050 3100 5050 2700
-Wire Notes Line
-	5050 2700 4650 2700
-Wire Notes Line
-	4650 2700 4650 3100
+	4400 3000 4700 3000
 $Comp
-L Device:LED D2
-U 1 1 60C07B1F
-P 4850 4300
-F 0 "D2" H 4843 4045 50  0000 C CNN
-F 1 "LED" H 4843 4136 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4850 4300 50  0001 C CNN
-F 3 "~" H 4850 4300 50  0001 C CNN
-	1    4850 4300
-	-1   0    0    1   
+L Device:R_US R?
+U 1 1 60C967CD
+P 4700 3700
+F 0 "R?" H 4500 3750 50  0000 L CNN
+F 1 "4.7k" H 4450 3650 50  0000 L CNN
+F 2 "" V 4740 3690 50  0001 C CNN
+F 3 "~" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3000 4700 3150
+Connection ~ 4700 3000
+Wire Wire Line
+	4700 3000 5200 3000
+Wire Wire Line
+	4700 3450 4700 3550
+Wire Wire Line
+	4400 3900 4700 3900
+Wire Wire Line
+	4700 3850 4700 3900
+Connection ~ 4700 3900
+Wire Wire Line
+	4700 3900 4800 3900
+Wire Wire Line
+	5100 3900 5200 3900
+Connection ~ 5200 3900
+$Comp
+L Device:R_US R?
+U 1 1 60CA13C5
+P 4950 5200
+F 0 "R?" V 5155 5200 50  0000 C CNN
+F 1 "4.7k" V 5064 5200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4990 5190 50  0001 C CNN
+F 3 "~" H 4950 5200 50  0001 C CNN
+	1    4950 5200
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R18
-U 1 1 60C07B25
-P 4850 5200
-F 0 "R18" V 4645 5200 50  0000 C CNN
-F 1 "4.7k" V 4736 5200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4890 5190 50  0001 C CNN
-F 3 "~" H 4850 5200 50  0001 C CNN
-	1    4850 5200
-	0    1    1    0   
+L Device:LED D?
+U 1 1 60CA13CB
+P 4700 4600
+F 0 "D?" V 4750 4450 50  0000 C CNN
+F 1 "LED" V 4650 4450 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4700 4600 50  0001 C CNN
+F 3 "~" H 4700 4600 50  0001 C CNN
+	1    4700 4600
+	0    -1   -1   0   
 $EndComp
-Text Notes 4650 4500 0    50   ~ 0
-Status LED
-Wire Wire Line
-	5200 5200 5000 5200
-Wire Wire Line
-	5200 4300 5000 4300
-Wire Wire Line
-	4500 4300 4700 4300
-Wire Wire Line
-	4500 5200 4700 5200
 Wire Notes Line
-	4650 4400 5050 4400
+	4550 4800 4950 4800
 Wire Notes Line
-	5050 4400 5050 4000
+	4950 4400 4550 4400
 Wire Notes Line
-	5050 4000 4650 4000
+	4550 4400 4550 4800
 Wire Notes Line
-	4650 4000 4650 4400
-Connection ~ 5200 4300
+	4950 4800 4950 4400
+Wire Wire Line
+	4400 4300 4700 4300
+$Comp
+L Device:R_US R?
+U 1 1 60CA13D6
+P 4700 5000
+F 0 "R?" H 4500 5050 50  0000 L CNN
+F 1 "4.7k" H 4450 4950 50  0000 L CNN
+F 2 "" V 4740 4990 50  0001 C CNN
+F 3 "~" H 4700 5000 50  0001 C CNN
+	1    4700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4300 4700 4450
+Connection ~ 4700 4300
+Wire Wire Line
+	4700 4300 5200 4300
+Wire Wire Line
+	4700 4750 4700 4850
+Wire Wire Line
+	4400 5200 4700 5200
+Wire Wire Line
+	4700 5150 4700 5200
+Connection ~ 4700 5200
+Wire Wire Line
+	4700 5200 4800 5200
+Wire Wire Line
+	5100 5200 5200 5200
 Connection ~ 5200 5200
+Text Notes 4100 4650 0    50   ~ 0
+Status LED
 $EndSCHEMATC
