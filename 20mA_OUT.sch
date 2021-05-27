@@ -108,28 +108,25 @@ Wire Wire Line
 	5500 4300 5500 4600
 Wire Wire Line
 	5500 4600 4800 4600
-Text HLabel 7600 3250 2    50   Input ~ 0
+Text HLabel 7850 3250 2    50   Input ~ 0
 OUT
 $Comp
 L Transistor_FET:IRF540N Q1
 U 1 1 60AC135E
-P 7350 3700
-F 0 "Q1" H 7554 3746 50  0000 L CNN
-F 1 "IRF540N" H 7554 3655 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7600 3625 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7350 3700 50  0001 L CNN
-	1    7350 3700
+P 7600 3700
+F 0 "Q1" H 7804 3746 50  0000 L CNN
+F 1 "IRF510N" H 7804 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7850 3625 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7600 3700 50  0001 L CNN
+	1    7600 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 3700 7150 3700
+	7700 4600 7700 3900
 Wire Wire Line
-	7450 4600 7450 3900
-Connection ~ 6400 4600
+	7700 3500 7700 3250
 Wire Wire Line
-	7450 3500 7450 3250
-Wire Wire Line
-	7450 3250 7600 3250
+	7700 3250 7850 3250
 Wire Wire Line
 	6000 4600 5500 4600
 Connection ~ 5500 4600
@@ -146,8 +143,6 @@ Wire Notes Line
 	5950 3350 5950 4700
 Wire Notes Line
 	4200 3350 5950 3350
-Wire Wire Line
-	6400 4600 7450 4600
 $Comp
 L Amplifier_Operational:LM324 U2
 U 2 1 60C66065
@@ -159,4 +154,24 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6750 3900 50  0001 C CNN
 	2    6700 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60C85CA5
+P 7200 3700
+AR Path="/60A68B69/60C85CA5" Ref="R?"  Part="1" 
+AR Path="/60ABD2CD/60C85CA5" Ref="R27"  Part="1" 
+F 0 "R27" V 6995 3700 50  0000 C CNN
+F 1 "10" V 7086 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7240 3690 50  0001 C CNN
+F 3 "~" H 7200 3700 50  0001 C CNN
+	1    7200 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3700 7050 3700
+Wire Wire Line
+	7350 3700 7400 3700
+Wire Wire Line
+	7700 4600 6400 4600
+Connection ~ 6400 4600
 $EndSCHEMATC

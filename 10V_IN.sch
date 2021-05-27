@@ -97,9 +97,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 3700 6350 3700
 Connection ~ 6150 3700
-Wire Wire Line
-	6150 4300 6850 4300
-Connection ~ 6150 4300
 Wire Notes Line
 	4100 3350 5300 3350
 Wire Notes Line
@@ -144,4 +141,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5750 3900 50  0001 C CNN
 	4    5700 3700
 	1    0    0    -1  
 $EndComp
+Text GLabel 6700 4300 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6850 4300 6700 4300
 $EndSCHEMATC

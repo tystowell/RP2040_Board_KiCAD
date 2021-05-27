@@ -188,7 +188,7 @@ Wire Wire Line
 	6900 3550 6900 3600
 Connection ~ 6900 3550
 Text Notes 7600 5250 2    50   ~ 0
-Since V over R13 = V over R14 by presence of U7, I into U5 = I into U6
+Since V over R13 = V over R14 by presence of U2C, I into U3 = I into U4
 Wire Notes Line
 	7400 3250 8400 3250
 Wire Notes Line
