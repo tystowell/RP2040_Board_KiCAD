@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_US R11
+L Device:R_US R12
 U 1 1 60AC4764
 P 4200 3350
-F 0 "R11" V 3995 3350 50  0000 C CNN
+F 0 "R12" V 3995 3350 50  0000 C CNN
 F 1 "150" V 4086 3350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3340 50  0001 C CNN
 F 3 "~" H 4200 3350 50  0001 C CNN
@@ -29,10 +29,10 @@ C_IN
 Text HLabel 3800 3550 0    50   Input ~ 0
 C_OUT
 $Comp
-L Device:R_US R12
+L Device:R_US R13
 U 1 1 60AC67AD
 P 4200 3850
-F 0 "R12" H 4132 3804 50  0000 R CNN
+F 0 "R13" H 4132 3804 50  0000 R CNN
 F 1 "1M" H 4132 3895 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3840 50  0001 C CNN
 F 3 "~" H 4200 3850 50  0001 C CNN
@@ -75,10 +75,10 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 6500 3450 50  00
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R14
+L Device:R_US R15
 U 1 1 60ACED9B
 P 5950 4650
-F 0 "R14" H 5882 4604 50  0000 R CNN
+F 0 "R15" H 5882 4604 50  0000 R CNN
 F 1 "47" H 5882 4695 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5990 4640 50  0001 C CNN
 F 3 "~" H 5950 4650 50  0001 C CNN
@@ -86,10 +86,10 @@ F 3 "~" H 5950 4650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R13
+L Device:R_US R14
 U 1 1 60ACF42F
 P 5450 4650
-F 0 "R13" H 5382 4604 50  0000 R CNN
+F 0 "R14" H 5382 4604 50  0000 R CNN
 F 1 "47" H 5382 4695 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5490 4640 50  0001 C CNN
 F 3 "~" H 5450 4650 50  0001 C CNN
@@ -139,10 +139,10 @@ Text GLabel 6850 3950 0    50   Input ~ 0
 GND
 Connection ~ 5950 4850
 $Comp
-L Device:R_US R15
+L Device:R_US R16
 U 1 1 60AD8205
 P 6900 3750
-F 0 "R15" H 6832 3704 50  0000 R CNN
+F 0 "R16" H 6832 3704 50  0000 R CNN
 F 1 "150" H 6832 3795 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6940 3740 50  0001 C CNN
 F 3 "~" H 6900 3750 50  0001 C CNN
@@ -150,10 +150,10 @@ F 3 "~" H 6900 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R16
+L Device:R_US R17
 U 1 1 60ADC110
 P 7600 3550
-F 0 "R16" V 7395 3550 50  0000 C CNN
+F 0 "R17" V 7395 3550 50  0000 C CNN
 F 1 "2.2k" V 7486 3550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7640 3540 50  0001 C CNN
 F 3 "~" H 7600 3550 50  0001 C CNN
@@ -188,7 +188,7 @@ Wire Wire Line
 	6900 3550 6900 3600
 Connection ~ 6900 3550
 Text Notes 7600 5250 2    50   ~ 0
-Since V over R13 = V over R14 by presence of U2C, I into U3 = I into U4
+Since V over R14 = V over R15 by presence of U2C, I into U3 = I into U4
 Wire Notes Line
 	7400 3250 8400 3250
 Wire Notes Line
