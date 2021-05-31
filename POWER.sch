@@ -91,7 +91,7 @@ AR Path="/60BF3F06" Ref="J?"  Part="1"
 AR Path="/60BF1335/60BF3F06" Ref="J10"  Part="1" 
 F 0 "J10" H 4607 4175 50  0000 C CNN
 F 1 "24V DC Power" H 4607 4084 50  0000 C CNN
-F 2 "" H 4600 3810 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 4600 3810 50  0001 C CNN
 F 3 "~" H 4600 3810 50  0001 C CNN
 	1    4550 3850
 	1    0    0    -1  
