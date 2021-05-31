@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7100 2950 2    50   Input ~ 0
+Text HLabel 7100 3750 2    50   Input ~ 0
 OUT1
 Text HLabel 4700 2850 0    50   Input ~ 0
 IN1
@@ -31,66 +31,8 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5800 3300 50  00
 	1    5800 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 6150 3450 3    50   Input ~ 0
-GND
-Wire Wire Line
-	6100 3400 6150 3400
-Wire Wire Line
-	6150 3400 6150 3450
 Text GLabel 4700 3750 0    50   Input ~ 0
 GND
-Wire Wire Line
-	6150 3400 6650 3400
-Connection ~ 6150 3400
-Wire Wire Line
-	6100 3200 6150 3200
-$Comp
-L Device:R_US R24
-U 1 1 60C19BF3
-P 6150 2750
-F 0 "R24" H 6218 2796 50  0000 L CNN
-F 1 "4.7k" H 6218 2705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6190 2740 50  0001 C CNN
-F 3 "~" H 6150 2750 50  0001 C CNN
-	1    6150 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R26
-U 1 1 60C1B077
-P 6650 2750
-F 0 "R26" H 6718 2796 50  0000 L CNN
-F 1 "4.7k" H 6718 2705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6690 2740 50  0001 C CNN
-F 3 "~" H 6650 2750 50  0001 C CNN
-	1    6650 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 2900 6150 3200
-Connection ~ 6150 3200
-Wire Wire Line
-	6150 3200 6350 3200
-Text GLabel 6400 2500 1    50   Input ~ 0
-24V
-Wire Wire Line
-	6150 2600 6150 2550
-Wire Wire Line
-	6150 2550 6400 2550
-Wire Wire Line
-	6650 2550 6650 2600
-Wire Wire Line
-	6400 2550 6400 2500
-Connection ~ 6400 2550
-Wire Wire Line
-	6400 2550 6650 2550
-Wire Wire Line
-	6650 2900 6650 2950
-Wire Wire Line
-	6650 2950 7100 2950
-Connection ~ 6650 2950
-Wire Wire Line
-	6650 2950 6650 3000
 Text HLabel 4700 4400 0    50   Input ~ 0
 IN2
 $Comp
@@ -119,17 +61,6 @@ Text GLabel 6500 4700 1    50   Input ~ 0
 24V
 Text HLabel 7100 5300 2    50   Input ~ 0
 OUT2
-$Comp
-L Transistor_BJT:BC337 Q2
-U 1 1 60C43ACA
-P 6550 3200
-F 0 "Q2" H 6741 3246 50  0000 L CNN
-F 1 "BC337" H 6741 3155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6750 3125 50  0001 L CIN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 6550 3200 50  0001 L CNN
-	1    6550 3200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_BJT:BC337 Q3
 U 1 1 60C46842
@@ -238,8 +169,8 @@ L Device:R_US R?
 U 1 1 60CF8664
 P 6350 4950
 AR Path="/60B28EA9/60CF8664" Ref="R?"  Part="1" 
-AR Path="/60BBF151/60CF8664" Ref="R?"  Part="1" 
-F 0 "R?" V 6250 4950 50  0000 C CNN
+AR Path="/60BBF151/60CF8664" Ref="R26"  Part="1" 
+F 0 "R26" V 6250 4950 50  0000 C CNN
 F 1 "470" V 6150 4950 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6390 4940 50  0001 C CNN
 F 3 "~" H 6350 4950 50  0001 C CNN
@@ -262,8 +193,8 @@ L Device:R_US R?
 U 1 1 60D022B0
 P 6350 5300
 AR Path="/60B28EA9/60D022B0" Ref="R?"  Part="1" 
-AR Path="/60BBF151/60D022B0" Ref="R?"  Part="1" 
-F 0 "R?" V 6250 5300 50  0000 C CNN
+AR Path="/60BBF151/60D022B0" Ref="R27"  Part="1" 
+F 0 "R27" V 6250 5300 50  0000 C CNN
 F 1 "4.7k" V 6150 5300 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6390 5290 50  0001 C CNN
 F 3 "~" H 6350 5300 50  0001 C CNN
@@ -279,23 +210,65 @@ Wire Wire Line
 Wire Wire Line
 	6900 5300 7100 5300
 Connection ~ 6900 5300
+Text GLabel 6500 3150 1    50   Input ~ 0
+24V
 $Comp
-L Transistor_Array:ULN2803A U?
-U 1 1 60D04C56
-P 7650 3800
-F 0 "U?" H 7650 4367 50  0000 C CNN
-F 1 "ULN2803A" H 7650 4276 50  0000 C CNN
-F 2 "" H 7700 3150 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 7750 3600 50  0001 C CNN
-	1    7650 3800
+L Transistor_BJT:BC337 Q2
+U 1 1 60B54B15
+P 6800 3400
+F 0 "Q2" H 6991 3446 50  0000 L CNN
+F 1 "BC337" H 6991 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7000 3325 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 6800 3400 50  0001 L CNN
+	1    6800 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 8150 3500 2    50   Input ~ 0
-24V
+$Comp
+L Device:R_US R?
+U 1 1 60B54B1B
+P 6350 3400
+AR Path="/60B28EA9/60B54B1B" Ref="R?"  Part="1" 
+AR Path="/60BBF151/60B54B1B" Ref="R24"  Part="1" 
+F 0 "R24" V 6250 3400 50  0000 C CNN
+F 1 "470" V 6150 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6390 3390 50  0001 C CNN
+F 3 "~" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	8050 3500 8150 3500
-Text GLabel 7650 4600 3    50   Input ~ 0
+	6100 3400 6200 3400
+Wire Wire Line
+	6500 3400 6600 3400
+Wire Wire Line
+	6100 3200 6500 3200
+Wire Wire Line
+	6500 3200 6500 3150
+Connection ~ 6500 3200
+Wire Wire Line
+	6500 3200 6900 3200
+$Comp
+L Device:R_US R?
+U 1 1 60B54B27
+P 6350 3750
+AR Path="/60B28EA9/60B54B27" Ref="R?"  Part="1" 
+AR Path="/60BBF151/60B54B27" Ref="R25"  Part="1" 
+F 0 "R25" V 6250 3750 50  0000 C CNN
+F 1 "4.7k" V 6150 3750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6390 3740 50  0001 C CNN
+F 3 "~" H 6350 3750 50  0001 C CNN
+	1    6350 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 3750 6200 3750
+Wire Wire Line
+	6500 3750 6900 3750
+Wire Wire Line
+	6900 3750 6900 3600
+Wire Wire Line
+	6900 3750 7100 3750
+Connection ~ 6900 3750
+Text GLabel 5950 3750 0    50   Input ~ 0
 GND
-Wire Wire Line
-	7650 4500 7650 4600
 $EndSCHEMATC

@@ -16,27 +16,27 @@ $EndDescr
 $Comp
 L Device:R_US R12
 U 1 1 60AC4764
-P 4200 3350
-F 0 "R12" V 3995 3350 50  0000 C CNN
-F 1 "150" V 4086 3350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3340 50  0001 C CNN
-F 3 "~" H 4200 3350 50  0001 C CNN
-	1    4200 3350
+P 4050 3150
+F 0 "R12" V 3845 3150 50  0000 C CNN
+F 1 "150" V 3936 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4090 3140 50  0001 C CNN
+F 3 "~" H 4050 3150 50  0001 C CNN
+	1    4050 3150
 	0    1    1    0   
 $EndComp
-Text HLabel 3800 3350 0    50   Input ~ 0
+Text HLabel 3700 3150 0    50   Input ~ 0
 C_IN
-Text HLabel 3800 3550 0    50   Input ~ 0
+Text HLabel 3700 3550 0    50   Input ~ 0
 C_OUT
 $Comp
 L Device:R_US R13
 U 1 1 60AC67AD
-P 4200 3850
-F 0 "R13" H 4132 3804 50  0000 R CNN
-F 1 "1M" H 4132 3895 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4240 3840 50  0001 C CNN
-F 3 "~" H 4200 3850 50  0001 C CNN
-	1    4200 3850
+P 4050 3800
+F 0 "R13" H 3982 3754 50  0000 R CNN
+F 1 "1M" H 3982 3845 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4090 3790 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -50,18 +50,7 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4900 3450 50  00
 	1    4900 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 3350 4050 3350
-Wire Wire Line
-	4350 3350 4600 3350
-Wire Wire Line
-	4600 3550 4200 3550
-Wire Wire Line
-	4200 3550 4200 3700
-Connection ~ 4200 3550
-Wire Wire Line
-	4200 3550 3800 3550
-Text GLabel 4200 4900 3    50   Input ~ 0
+Text GLabel 4000 4850 0    50   Input ~ 0
 GND
 $Comp
 L Isolator:PC817 U4
@@ -118,14 +107,7 @@ Wire Wire Line
 	5950 4850 5450 4850
 Wire Wire Line
 	5450 4850 5450 4800
-Wire Wire Line
-	4200 4850 5450 4850
 Connection ~ 5450 4850
-Wire Wire Line
-	4200 4900 4200 4850
-Connection ~ 4200 4850
-Wire Wire Line
-	4200 4850 4200 4000
 Text GLabel 5700 3100 1    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -224,4 +206,24 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6650 4600 50  0001 C CNN
 	3    6600 4400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4600 3150 4600 3350
+Wire Wire Line
+	3900 3150 3700 3150
+Wire Wire Line
+	3700 3550 4050 3550
+Wire Wire Line
+	4050 3550 4050 3650
+Connection ~ 4050 3550
+Wire Wire Line
+	4050 3950 4050 4850
+Wire Wire Line
+	4050 4850 5450 4850
+Wire Wire Line
+	4000 4850 4050 4850
+Connection ~ 4050 4850
+Wire Wire Line
+	4050 3550 4600 3550
+Wire Wire Line
+	4200 3150 4600 3150
 $EndSCHEMATC

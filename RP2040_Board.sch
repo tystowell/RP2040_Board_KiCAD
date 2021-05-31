@@ -32,7 +32,7 @@ F1 "10V_IN.sch" 50
 F2 "OUT" I L 7050 4400 50 
 F3 "IN" I R 7650 4400 50 
 $EndSheet
-Text GLabel 5900 5350 3    50   Input ~ 0
+Text GLabel 6700 4850 2    50   Input ~ 0
 GND
 $Sheet
 S 4150 3300 600  600 
@@ -57,7 +57,6 @@ NoConn ~ 6600 4350
 NoConn ~ 6600 4450
 NoConn ~ 6600 4550
 NoConn ~ 6600 4750
-NoConn ~ 6600 4850
 NoConn ~ 6600 4950
 NoConn ~ 6000 5250
 NoConn ~ 5800 5250
@@ -235,7 +234,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 4600 4000 4600
 Text GLabel 3950 3700 3    50   Input ~ 0
-GND
+24V
 Text GLabel 3950 2900 3    50   Input ~ 0
 GND
 Wire Wire Line
@@ -246,8 +245,6 @@ Wire Wire Line
 	3950 3700 3950 3650
 Wire Wire Line
 	3950 3650 3900 3650
-Wire Wire Line
-	5900 5350 5900 5250
 Text GLabel 7850 4500 3    50   Input ~ 0
 GND
 Wire Wire Line
@@ -345,4 +342,34 @@ Wire Wire Line
 Connection ~ 4050 5400
 Wire Wire Line
 	4050 5400 4050 5100
+Text GLabel 7800 5100 0    50   Input ~ 0
+GND
+Text GLabel 7800 5300 0    50   Input ~ 0
+24V
+$Comp
+L Connector:Conn_01x02_Female J9
+U 1 1 60B60AD3
+P 8100 5150
+F 0 "J9" H 8128 5126 50  0000 L CNN
+F 1 "GND-24V" H 8128 5035 50  0000 L CNN
+F 2 "" H 8100 5150 50  0001 C CNN
+F 3 "~" H 8100 5150 50  0001 C CNN
+	1    8100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5100 7850 5100
+Wire Wire Line
+	7850 5100 7850 5150
+Wire Wire Line
+	7850 5150 7900 5150
+Wire Wire Line
+	7800 5300 7850 5300
+Wire Wire Line
+	7850 5300 7850 5250
+Wire Wire Line
+	7850 5250 7900 5250
+Wire Wire Line
+	6600 4850 6700 4850
+NoConn ~ 5900 5250
 $EndSCHEMATC

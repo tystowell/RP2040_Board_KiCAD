@@ -83,48 +83,13 @@ Wire Wire Line
 Connection ~ 5150 4100
 Wire Wire Line
 	5150 4100 5150 4050
-Text GLabel 5950 4050 1    50   Input ~ 0
-3.3V
-Wire Wire Line
-	5950 4150 5950 4100
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 60BF3EF1
-P 6050 4100
-AR Path="/60BF3EF1" Ref="#FLG?"  Part="1" 
-AR Path="/60BF1335/60BF3EF1" Ref="#FLG03"  Part="1" 
-F 0 "#FLG03" H 6050 4175 50  0001 C CNN
-F 1 "PWR_FLAG" V 6050 4228 50  0000 L CNN
-F 2 "" H 6050 4100 50  0001 C CNN
-F 3 "~" H 6050 4100 50  0001 C CNN
-	1    6050 4100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6050 4100 5950 4100
-Connection ~ 5950 4100
-Wire Wire Line
-	5950 4100 5950 4050
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60BF3EFA
-P 5950 4150
-AR Path="/60BF3EFA" Ref="#PWR?"  Part="1" 
-AR Path="/60BF1335/60BF3EFA" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 5950 4000 50  0001 C CNN
-F 1 "+3.3V" H 5965 4323 50  0000 C CNN
-F 2 "" H 5950 4150 50  0001 C CNN
-F 3 "" H 5950 4150 50  0001 C CNN
-	1    5950 4150
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector:Jack-DC J?
 U 1 1 60BF3F06
 P 4550 3850
 AR Path="/60BF3F06" Ref="J?"  Part="1" 
-AR Path="/60BF1335/60BF3F06" Ref="J9"  Part="1" 
-F 0 "J9" H 4607 4175 50  0000 C CNN
+AR Path="/60BF1335/60BF3F06" Ref="J10"  Part="1" 
+F 0 "J10" H 4607 4175 50  0000 C CNN
 F 1 "24V DC Power" H 4607 4084 50  0000 C CNN
 F 2 "" H 4600 3810 50  0001 C CNN
 F 3 "~" H 4600 3810 50  0001 C CNN
@@ -153,23 +118,23 @@ Wire Notes Line
 	6600 4400 6600 3300
 Wire Notes Line
 	6600 3300 4900 3300
-Text GLabel 6950 3500 1    50   Input ~ 0
+Text GLabel 6150 3500 1    50   Input ~ 0
 24V
-Text GLabel 6950 4200 3    50   Input ~ 0
+Text GLabel 6150 4200 3    50   Input ~ 0
 GND
 Wire Wire Line
-	6950 4200 6950 4150
+	6150 4200 6150 4150
 Wire Wire Line
-	6950 3500 6950 3550
+	6150 3500 6150 3550
 $Comp
 L Amplifier_Operational:LM324 U2
 U 5 1 60C63DB4
-P 7050 3850
-F 0 "U2" H 7008 3896 50  0000 L CNN
-F 1 "LM324" H 7008 3805 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7000 3950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7100 4050 50  0001 C CNN
-	5    7050 3850
+P 6250 3850
+F 0 "U2" H 6208 3896 50  0000 L CNN
+F 1 "LM324" H 6208 3805 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6200 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6300 4050 50  0001 C CNN
+	5    6250 3850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
